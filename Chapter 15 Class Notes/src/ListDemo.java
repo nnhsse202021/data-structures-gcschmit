@@ -120,7 +120,6 @@ public class ListDemo
             {
                 staff.add("Charlie");
             }
-            System.out.print(n + " ");
         }
     }
 }
