@@ -22,7 +22,13 @@ public class MapDemo
         favoriteColors.put("Dylan", Color.BLUE);
         favoriteColors.put("Daniel", Color.MAGENTA);
         favoriteColors.put("Robert", Color.CYAN);
+
+        // two different keys can have the same value
         favoriteColors.put("Schmit", Color.MAGENTA);
+
+        // but the same key cannot have two different values
+        // this changes the value for the key "Daniel"
+        favoriteColors.put("Daniel", Color.RED);   
 
         // create a set of the keys in the map
         Set<String> keySet = favoriteColors.keySet();
